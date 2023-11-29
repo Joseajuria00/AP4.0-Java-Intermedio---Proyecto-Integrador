@@ -1,0 +1,2317 @@
+{
+	"info": {
+		"_postman_id": "922a3db7-66a8-479f-b108-3b165d3d0327",
+		"name": "TPIntegrador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30775581"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Obtener Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Clientes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/clientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:24:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"razonSocial\": \"RSocial1\",\n        \"email\": \"Email1\",\n        \"direccion\": \"Dir1\",\n        \"servicios\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Luz\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Wifi\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Telefono\"\n            }\n        ],\n        \"cuit\": \"11111111\"\n    },\n    {\n        \"id\": 2,\n        \"razonSocial\": \"RSocial2\",\n        \"email\": \"Email2\",\n        \"direccion\": \"Dir2\",\n        \"servicios\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Telefono\"\n            }\n        ],\n        \"cuit\": \"22222222\"\n    },\n    {\n        \"id\": 3,\n        \"razonSocial\": \"RSocial3\",\n        \"email\": \"Email3\",\n        \"direccion\": \"Dir3\",\n        \"servicios\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Wifi\"\n            }\n        ],\n        \"cuit\": \"33333333\"\n    },\n    {\n        \"id\": 4,\n        \"razonSocial\": \"RSocial4\",\n        \"email\": \"Email4\",\n        \"direccion\": \"Dir4\",\n        \"servicios\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Telefono\"\n            },\n            {\n                \"id\": 1,\n                \"nombre\": \"Luz\"\n            }\n        ],\n        \"cuit\": \"44444444\"\n    },\n    {\n        \"id\": 5,\n        \"razonSocial\": \"RSocial56\",\n        \"email\": null,\n        \"direccion\": null,\n        \"servicios\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Luz\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            }\n        ],\n        \"cuit\": \"55555555\"\n    },\n    {\n        \"id\": 6,\n        \"razonSocial\": \"RSocial6\",\n        \"email\": \"Email6\",\n        \"direccion\": \"Dir6\",\n        \"servicios\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Luz\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            }\n        ],\n        \"cuit\": \"66666666\"\n    },\n    {\n        \"id\": 7,\n        \"razonSocial\": \"RSocial7\",\n        \"email\": \"Email7\",\n        \"direccion\": \"Dir7\",\n        \"servicios\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Luz\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            }\n        ],\n        \"cuit\": \"77777777\"\n    },\n    {\n        \"id\": 9,\n        \"razonSocial\": \"RSocial9\",\n        \"email\": \"Email9\",\n        \"direccion\": \"Dir9\",\n        \"servicios\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Wifi\"\n            }\n        ],\n        \"cuit\": \"88888888\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/clientes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Cliente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/clientes/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"clientes",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:24:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"razonSocial\": \"RSocial2\",\n    \"email\": \"Email2\",\n    \"direccion\": \"Dir2\",\n    \"servicios\": [\n        {\n            \"id\": 2,\n            \"nombre\": \"Gas\"\n        },\n        {\n            \"id\": 4,\n            \"nombre\": \"Telefono\"\n        }\n    ],\n    \"cuit\": \"22222222\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"razonSocial\": \"RSocial10\",\r\n    \"email\": \"Email10\",\r\n    \"direccion\": \"Dir10\",\r\n    \"servicios\": [\r\n        {\r\n            \"id\": 2\r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ],\r\n    \"cuit\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarCliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarCliente"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Cliente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"razonSocial\": \"RSocial10\",\r\n    \"email\": \"Email10\",\r\n    \"direccion\": \"Dir10\",\r\n    \"servicios\": [\r\n        {\r\n            \"id\": 2\r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ],\r\n    \"cuit\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarCliente",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarCliente"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:24:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 11,\n    \"razonSocial\": \"RSocial10\",\n    \"email\": \"Email10\",\n    \"direccion\": \"Dir10\",\n    \"servicios\": [\n        {\n            \"id\": 2,\n            \"nombre\": \"Gas\"\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        }\n    ],\n    \"cuit\": \"12345678\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarCliente/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarCliente",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Cliente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarCliente/11",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarCliente",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:25:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Cliente eliminado correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Especialidades",
+			"item": [
+				{
+					"name": "Obtener Especialidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/especialidades",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"especialidades"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Especialidades",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/especialidades",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"especialidades"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:25:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Mecanico\"\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Electricidad\"\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"Computación\"\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"Automotor\"\n    },\n    {\n        \"id\": 5,\n        \"nombre\": \"Plomero\"\n    },\n    {\n        \"id\": 7,\n        \"nombre\": \"Albañil\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Especialidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/especialidades/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"especialidades",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Especialidade",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/especialidades/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"especialidades",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:25:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"Electricidad\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Especialidad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Computación\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarEspecialidad",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarEspecialidad"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Especialidad",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Computación\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarEspecialidad",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarEspecialidad"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:26:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"nombre\": \"Computación\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Especialidad",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarEspecialidad/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarEspecialidad",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Especialidad",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarEspecialidad/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarEspecialidad",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:26:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Especialidad eliminada correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tecnicos",
+			"item": [
+				{
+					"name": "Obtener Tecnicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/tecnicos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"tecnicos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Tecnicos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/tecnicos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"tecnicos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"T2\",\n        \"email\": \"Tecnico2\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"T3\",\n        \"email\": \"Tecnico3\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"T4\",\n        \"email\": \"Tecnico4\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Tecnicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/tecnicos/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"tecnicos",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Tecnicos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/tecnicos/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"tecnicos",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"T2\",\n    \"email\": \"Tecnico2\",\n    \"numTel\": \"12345678\",\n    \"especialidades\": [\n        {\n            \"id\": 3,\n            \"nombre\": \"Computación\"\n        },\n        {\n            \"id\": 5,\n            \"nombre\": \"Plomero\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Tecnico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"T6\",\r\n    \"email\": \"Tecnico6\",\r\n    \"numTel\": \"12345678\",\r\n    \"especialidades\": [\r\n        {\r\n            \"id\": 4\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarTecnico",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarTecnico"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Tecnico",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"T6\",\r\n    \"email\": \"Tecnico6\",\r\n    \"numTel\": \"12345678\",\r\n    \"especialidades\": [\r\n        {\r\n            \"id\": 4\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarTecnico",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarTecnico"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"nombre\": \"T6\",\n    \"email\": \"Tecnico6\",\n    \"numTel\": \"12345678\",\n    \"especialidades\": [\n        {\n            \"id\": 4,\n            \"nombre\": \"Automotor\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Tecnico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarTecnico/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarTecnico",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Tecnico",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarTecnico/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarTecnico",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Tecnico eliminado correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Servicios",
+			"item": [
+				{
+					"name": "Obtener Servicios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/servicios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"servicios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Servicios",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/servicios",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"servicios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Luz\"\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Gas\"\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"Wifi\"\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"Telefono\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Servicio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/servicios/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"servicios",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Servicio",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/servicios/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"servicios",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"Gas\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Servicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Telefono\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarServicio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarServicio"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Servicio",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Telefono\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarServicio",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarServicio"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"nombre\": \"Telefono\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Servicio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarServicio/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarServicio",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Servicio",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarServicio/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarServicio",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:27:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Servicio eliminado correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Incidentes",
+			"item": [
+				{
+					"name": "Obtener Incidentes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/incidentes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"incidentes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Incidentes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/incidentes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"incidentes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"fechaEstimada\": \"2023-11-25\",\n        \"fechaDesde\": \"2023-11-24T00:00:00\",\n        \"fechaHasta\": \"2023-11-24T01:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": \"Considreacion1\",\n        \"cliente\": {\n            \"id\": 1,\n            \"razonSocial\": \"RSocial1\",\n            \"email\": \"Email1\",\n            \"direccion\": \"Dir1\",\n            \"servicios\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Gas\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Wifi\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                }\n            ],\n            \"cuit\": \"11111111\"\n        },\n        \"tecnico\": {\n            \"id\": 1,\n            \"nombre\": \"José\",\n            \"email\": \"Jose@gmail.com\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Mecanico\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Albañil\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 3,\n        \"fechaEstimada\": \"2023-11-24\",\n        \"fechaDesde\": \"2023-11-27T00:00:00\",\n        \"fechaHasta\": \"2023-11-27T01:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": \"Consideracion2\",\n        \"cliente\": {\n            \"id\": 2,\n            \"razonSocial\": \"RSocial2\",\n            \"email\": \"Email2\",\n            \"direccion\": \"Dir2\",\n            \"servicios\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Gas\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                }\n            ],\n            \"cuit\": \"22222222\"\n        },\n        \"tecnico\": {\n            \"id\": 1,\n            \"nombre\": \"José\",\n            \"email\": \"Jose@gmail.com\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Mecanico\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Albañil\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 4,\n        \"fechaEstimada\": \"2023-11-23\",\n        \"fechaDesde\": \"2023-11-23T00:00:00\",\n        \"fechaHasta\": \"2023-11-23T00:00:00\",\n        \"resuelto\": false,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 3,\n            \"razonSocial\": \"RSocial3\",\n            \"email\": \"Email3\",\n            \"direccion\": \"Dir3\",\n            \"servicios\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Wifi\"\n                }\n            ],\n            \"cuit\": \"33333333\"\n        },\n        \"tecnico\": {\n            \"id\": 1,\n            \"nombre\": \"José\",\n            \"email\": \"Jose@gmail.com\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Mecanico\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Albañil\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 5,\n        \"fechaEstimada\": \"2023-11-22\",\n        \"fechaDesde\": \"2023-11-22T00:00:00\",\n        \"fechaHasta\": \"2023-11-22T00:00:00\",\n        \"resuelto\": false,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 4,\n            \"razonSocial\": \"RSocial4\",\n            \"email\": \"Email4\",\n            \"direccion\": \"Dir4\",\n            \"servicios\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                },\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                }\n            ],\n            \"cuit\": \"44444444\"\n        },\n        \"tecnico\": {\n            \"id\": 1,\n            \"nombre\": \"José\",\n            \"email\": \"Jose@gmail.com\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Mecanico\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Albañil\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 6,\n        \"fechaEstimada\": \"2023-11-24\",\n        \"fechaDesde\": \"2023-11-21T00:00:00\",\n        \"fechaHasta\": \"2023-11-21T10:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 1,\n            \"razonSocial\": \"RSocial1\",\n            \"email\": \"Email1\",\n            \"direccion\": \"Dir1\",\n            \"servicios\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Gas\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Wifi\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                }\n            ],\n            \"cuit\": \"11111111\"\n        },\n        \"tecnico\": {\n            \"id\": 2,\n            \"nombre\": \"T2\",\n            \"email\": \"Tecnico2\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 7,\n        \"fechaEstimada\": \"2023-11-24\",\n        \"fechaDesde\": \"2023-11-22T00:00:00\",\n        \"fechaHasta\": \"2023-11-22T10:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 2,\n            \"razonSocial\": \"RSocial2\",\n            \"email\": \"Email2\",\n            \"direccion\": \"Dir2\",\n            \"servicios\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Gas\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                }\n            ],\n            \"cuit\": \"22222222\"\n        },\n        \"tecnico\": {\n            \"id\": 2,\n            \"nombre\": \"T2\",\n            \"email\": \"Tecnico2\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 8,\n        \"fechaEstimada\": \"2023-11-24\",\n        \"fechaDesde\": \"2023-11-23T00:00:00\",\n        \"fechaHasta\": \"2023-11-23T10:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 3,\n            \"razonSocial\": \"RSocial3\",\n            \"email\": \"Email3\",\n            \"direccion\": \"Dir3\",\n            \"servicios\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Wifi\"\n                }\n            ],\n            \"cuit\": \"33333333\"\n        },\n        \"tecnico\": {\n            \"id\": 2,\n            \"nombre\": \"T2\",\n            \"email\": \"Tecnico2\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 9,\n        \"fechaEstimada\": \"2023-11-24\",\n        \"fechaDesde\": \"2023-11-24T00:00:00\",\n        \"fechaHasta\": \"2023-11-24T10:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 4,\n            \"razonSocial\": \"RSocial4\",\n            \"email\": \"Email4\",\n            \"direccion\": \"Dir4\",\n            \"servicios\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                },\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                }\n            ],\n            \"cuit\": \"44444444\"\n        },\n        \"tecnico\": {\n            \"id\": 2,\n            \"nombre\": \"T2\",\n            \"email\": \"Tecnico2\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 10,\n        \"fechaEstimada\": \"2023-11-26\",\n        \"fechaDesde\": \"2023-11-26T00:00:00\",\n        \"fechaHasta\": \"2023-11-26T01:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 4,\n            \"razonSocial\": \"RSocial4\",\n            \"email\": \"Email4\",\n            \"direccion\": \"Dir4\",\n            \"servicios\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                },\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                }\n            ],\n            \"cuit\": \"44444444\"\n        },\n        \"tecnico\": {\n            \"id\": 4,\n            \"nombre\": \"T4\",\n            \"email\": \"Tecnico4\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 11,\n        \"fechaEstimada\": \"2023-11-26\",\n        \"fechaDesde\": \"2023-11-26T00:00:00\",\n        \"fechaHasta\": \"2023-11-26T01:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": null,\n        \"cliente\": {\n            \"id\": 4,\n            \"razonSocial\": \"RSocial4\",\n            \"email\": \"Email4\",\n            \"direccion\": \"Dir4\",\n            \"servicios\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                },\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                }\n            ],\n            \"cuit\": \"44444444\"\n        },\n        \"tecnico\": {\n            \"id\": 4,\n            \"nombre\": \"T4\",\n            \"email\": \"Tecnico4\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                }\n            ]\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Incidente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/incidentes/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"incidentes",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Incidente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/incidentes/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"incidentes",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"fechaEstimada\": \"2023-11-24\",\n    \"fechaDesde\": \"2023-11-27T00:00:00\",\n    \"fechaHasta\": \"2023-11-27T01:00:00\",\n    \"resuelto\": true,\n    \"consideraciones\": \"Consideracion2\",\n    \"cliente\": {\n        \"id\": 2,\n        \"razonSocial\": \"RSocial2\",\n        \"email\": \"Email2\",\n        \"direccion\": \"Dir2\",\n        \"servicios\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Gas\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Telefono\"\n            }\n        ],\n        \"cuit\": \"22222222\"\n    },\n    \"tecnico\": {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Incidente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaEstimada\": \"2023-11-26\",\r\n    \"fechaDesde\": \"2023-11-26T00:00:00\",\r\n    \"fechaHasta\": \"2023-11-26T01:00:00\",\r\n    \"resuelto\": true,\r\n    \"consideraciones\": null,\r\n    \"cliente\": {\r\n        \"id\": 4\r\n    },\r\n    \"tecnico\": {\r\n        \"id\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarIncidente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarIncidente"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Incidente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fechaEstimada\": \"2023-11-26\",\r\n    \"fechaDesde\": \"2023-11-26T00:00:00\",\r\n    \"fechaHasta\": \"2023-11-26T01:00:00\",\r\n    \"resuelto\": true,\r\n    \"consideraciones\": null,\r\n    \"cliente\": {\r\n        \"id\": 4\r\n    },\r\n    \"tecnico\": {\r\n        \"id\": 4\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarIncidente",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarIncidente"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 13,\n    \"fechaEstimada\": \"2023-11-25\",\n    \"fechaDesde\": \"2023-11-26T00:00:00\",\n    \"fechaHasta\": \"2023-11-26T01:00:00\",\n    \"resuelto\": true,\n    \"consideraciones\": null,\n    \"cliente\": {\n        \"id\": 4,\n        \"razonSocial\": \"RSocial4\",\n        \"email\": \"Email4\",\n        \"direccion\": \"Dir4\",\n        \"servicios\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Telefono\"\n            },\n            {\n                \"id\": 1,\n                \"nombre\": \"Luz\"\n            }\n        ],\n        \"cuit\": \"44444444\"\n    },\n    \"tecnico\": {\n        \"id\": 4,\n        \"nombre\": \"T4\",\n        \"email\": \"Tecnico4\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Incidente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarIncidente/13",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarIncidente",
+								"13"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Incidente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarIncidente/13",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarIncidente",
+										"13"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "33"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Incidente eliminado correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tipos de Problemas",
+			"item": [
+				{
+					"name": "Obtener Tipos de Problemas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/problemas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"problemas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Tipos de Problemas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/problemas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"problemas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"No hay conexión\",\n        \"horasEstimadas\": 10,\n        \"horasMaximas\": 15,\n        \"complejo\": true,\n        \"especialidades\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Problema de conexión\",\n        \"horasEstimadas\": 3,\n        \"horasMaximas\": 8,\n        \"complejo\": false,\n        \"especialidades\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"nombre\": \"Cañeria\",\n        \"horasEstimadas\": 10,\n        \"horasMaximas\": 15,\n        \"complejo\": true,\n        \"especialidades\": [\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"Cable\",\n        \"horasEstimadas\": 3,\n        \"horasMaximas\": 8,\n        \"complejo\": false,\n        \"especialidades\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"nombre\": \"Agua Caliente\",\n        \"horasEstimadas\": 10,\n        \"horasMaximas\": 15,\n        \"complejo\": true,\n        \"especialidades\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            }\n        ]\n    },\n    {\n        \"id\": 6,\n        \"nombre\": \"No hay agua\",\n        \"horasEstimadas\": 10,\n        \"horasMaximas\": 15,\n        \"complejo\": true,\n        \"especialidades\": [\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Tipo de Problema",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/problemas/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"problemas",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Tipo de Problema",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/problemas/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"problemas",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"nombre\": \"Cañeria\",\n    \"horasEstimadas\": 10,\n    \"horasMaximas\": 15,\n    \"complejo\": true,\n    \"especialidades\": [\n        {\n            \"id\": 5,\n            \"nombre\": \"Plomero\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Tipo de Problema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Cañeria\",\r\n    \"horasEstimadas\": 10,\r\n    \"horasMaximas\": 15,\r\n    \"complejo\": true,\r\n    \"especialidades\": [\r\n        {\r\n            \"id\": 5\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarProblema",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarProblema"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Tipo de Problema",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Cañeria\",\r\n    \"horasEstimadas\": 10,\r\n    \"horasMaximas\": 15,\r\n    \"complejo\": true,\r\n    \"especialidades\": [\r\n        {\r\n            \"id\": 5\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarProblema",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarProblema"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9,\n    \"nombre\": \"Cañeria\",\n    \"horasEstimadas\": 10,\n    \"horasMaximas\": 15,\n    \"complejo\": true,\n    \"especialidades\": [\n        {\n            \"id\": 5,\n            \"nombre\": \"Plomero\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Tipo de Problema",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarProblema/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarProblema",
+								"9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Tipo de Problema",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarProblema/9",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarProblema",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Tipo de problema eliminado correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Detalles de Incidentes",
+			"item": [
+				{
+					"name": "Obtener Detalles de Incidentes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/incidentesDetalles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"incidentesDetalles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Detalles de Incidentes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/incidentesDetalles",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"incidentesDetalles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:28:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"descripcion\": \"Desc1\",\n        \"incidente\": {\n            \"id\": 1,\n            \"fechaEstimada\": \"2023-11-25\",\n            \"fechaDesde\": \"2023-11-24T00:00:00\",\n            \"fechaHasta\": \"2023-11-24T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Considreacion1\",\n            \"cliente\": {\n                \"id\": 1,\n                \"razonSocial\": \"RSocial1\",\n                \"email\": \"Email1\",\n                \"direccion\": \"Dir1\",\n                \"servicios\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"11111111\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 1,\n            \"nombre\": \"Luz\"\n        },\n        \"problema\": {\n            \"id\": 1,\n            \"nombre\": \"No hay conexión\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 2,\n        \"descripcion\": \"Desc2\",\n        \"incidente\": {\n            \"id\": 1,\n            \"fechaEstimada\": \"2023-11-25\",\n            \"fechaDesde\": \"2023-11-24T00:00:00\",\n            \"fechaHasta\": \"2023-11-24T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Considreacion1\",\n            \"cliente\": {\n                \"id\": 1,\n                \"razonSocial\": \"RSocial1\",\n                \"email\": \"Email1\",\n                \"direccion\": \"Dir1\",\n                \"servicios\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"11111111\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 2,\n            \"nombre\": \"Gas\"\n        },\n        \"problema\": {\n            \"id\": 2,\n            \"nombre\": \"Problema de conexión\",\n            \"horasEstimadas\": 3,\n            \"horasMaximas\": 8,\n            \"complejo\": false,\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 3,\n        \"descripcion\": \"Desc3\",\n        \"incidente\": {\n            \"id\": 1,\n            \"fechaEstimada\": \"2023-11-25\",\n            \"fechaDesde\": \"2023-11-24T00:00:00\",\n            \"fechaHasta\": \"2023-11-24T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Considreacion1\",\n            \"cliente\": {\n                \"id\": 1,\n                \"razonSocial\": \"RSocial1\",\n                \"email\": \"Email1\",\n                \"direccion\": \"Dir1\",\n                \"servicios\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"11111111\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        },\n        \"problema\": {\n            \"id\": 3,\n            \"nombre\": \"Cañeria\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 4,\n        \"descripcion\": \"Desc4\",\n        \"incidente\": {\n            \"id\": 1,\n            \"fechaEstimada\": \"2023-11-25\",\n            \"fechaDesde\": \"2023-11-24T00:00:00\",\n            \"fechaHasta\": \"2023-11-24T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Considreacion1\",\n            \"cliente\": {\n                \"id\": 1,\n                \"razonSocial\": \"RSocial1\",\n                \"email\": \"Email1\",\n                \"direccion\": \"Dir1\",\n                \"servicios\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"11111111\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 4,\n            \"nombre\": \"Telefono\"\n        },\n        \"problema\": {\n            \"id\": 4,\n            \"nombre\": \"Cable\",\n            \"horasEstimadas\": 3,\n            \"horasMaximas\": 8,\n            \"complejo\": false,\n            \"especialidades\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 5,\n        \"descripcion\": \"Desc4\",\n        \"incidente\": {\n            \"id\": 11,\n            \"fechaEstimada\": \"2023-11-26\",\n            \"fechaDesde\": \"2023-11-26T00:00:00\",\n            \"fechaHasta\": \"2023-11-26T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 4,\n                \"razonSocial\": \"RSocial4\",\n                \"email\": \"Email4\",\n                \"direccion\": \"Dir4\",\n                \"servicios\": [\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    },\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    }\n                ],\n                \"cuit\": \"44444444\"\n            },\n            \"tecnico\": {\n                \"id\": 4,\n                \"nombre\": \"T4\",\n                \"email\": \"Tecnico4\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 4,\n            \"nombre\": \"Telefono\"\n        },\n        \"problema\": {\n            \"id\": 4,\n            \"nombre\": \"Cable\",\n            \"horasEstimadas\": 3,\n            \"horasMaximas\": 8,\n            \"complejo\": false,\n            \"especialidades\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 18,\n        \"descripcion\": \"Desc6\",\n        \"incidente\": {\n            \"id\": 5,\n            \"fechaEstimada\": \"2023-11-22\",\n            \"fechaDesde\": \"2023-11-22T00:00:00\",\n            \"fechaHasta\": \"2023-11-22T00:00:00\",\n            \"resuelto\": false,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 4,\n                \"razonSocial\": \"RSocial4\",\n                \"email\": \"Email4\",\n                \"direccion\": \"Dir4\",\n                \"servicios\": [\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    },\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    }\n                ],\n                \"cuit\": \"44444444\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 2,\n            \"nombre\": \"Gas\"\n        },\n        \"problema\": {\n            \"id\": 4,\n            \"nombre\": \"Cable\",\n            \"horasEstimadas\": 3,\n            \"horasMaximas\": 8,\n            \"complejo\": false,\n            \"especialidades\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 19,\n        \"descripcion\": \"Desc7\",\n        \"incidente\": {\n            \"id\": 3,\n            \"fechaEstimada\": \"2023-11-24\",\n            \"fechaDesde\": \"2023-11-27T00:00:00\",\n            \"fechaHasta\": \"2023-11-27T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Consideracion2\",\n            \"cliente\": {\n                \"id\": 2,\n                \"razonSocial\": \"RSocial2\",\n                \"email\": \"Email2\",\n                \"direccion\": \"Dir2\",\n                \"servicios\": [\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"22222222\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        },\n        \"problema\": {\n            \"id\": 1,\n            \"nombre\": \"No hay conexión\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 20,\n        \"descripcion\": \"Desc8\",\n        \"incidente\": {\n            \"id\": 3,\n            \"fechaEstimada\": \"2023-11-24\",\n            \"fechaDesde\": \"2023-11-27T00:00:00\",\n            \"fechaHasta\": \"2023-11-27T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Consideracion2\",\n            \"cliente\": {\n                \"id\": 2,\n                \"razonSocial\": \"RSocial2\",\n                \"email\": \"Email2\",\n                \"direccion\": \"Dir2\",\n                \"servicios\": [\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"22222222\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        },\n        \"problema\": {\n            \"id\": 2,\n            \"nombre\": \"Problema de conexión\",\n            \"horasEstimadas\": 3,\n            \"horasMaximas\": 8,\n            \"complejo\": false,\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 21,\n        \"descripcion\": \"Desc9\",\n        \"incidente\": {\n            \"id\": 4,\n            \"fechaEstimada\": \"2023-11-23\",\n            \"fechaDesde\": \"2023-11-23T00:00:00\",\n            \"fechaHasta\": \"2023-11-23T00:00:00\",\n            \"resuelto\": false,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 3,\n                \"razonSocial\": \"RSocial3\",\n                \"email\": \"Email3\",\n                \"direccion\": \"Dir3\",\n                \"servicios\": [\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    }\n                ],\n                \"cuit\": \"33333333\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 4,\n            \"nombre\": \"Telefono\"\n        },\n        \"problema\": {\n            \"id\": 3,\n            \"nombre\": \"Cañeria\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 22,\n        \"descripcion\": null,\n        \"incidente\": {\n            \"id\": 10,\n            \"fechaEstimada\": \"2023-11-26\",\n            \"fechaDesde\": \"2023-11-26T00:00:00\",\n            \"fechaHasta\": \"2023-11-26T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 4,\n                \"razonSocial\": \"RSocial4\",\n                \"email\": \"Email4\",\n                \"direccion\": \"Dir4\",\n                \"servicios\": [\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    },\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    }\n                ],\n                \"cuit\": \"44444444\"\n            },\n            \"tecnico\": {\n                \"id\": 4,\n                \"nombre\": \"T4\",\n                \"email\": \"Tecnico4\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 1,\n            \"nombre\": \"Luz\"\n        },\n        \"problema\": {\n            \"id\": 4,\n            \"nombre\": \"Cable\",\n            \"horasEstimadas\": 3,\n            \"horasMaximas\": 8,\n            \"complejo\": false,\n            \"especialidades\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 23,\n        \"descripcion\": null,\n        \"incidente\": {\n            \"id\": 6,\n            \"fechaEstimada\": \"2023-11-24\",\n            \"fechaDesde\": \"2023-11-21T00:00:00\",\n            \"fechaHasta\": \"2023-11-21T10:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 1,\n                \"razonSocial\": \"RSocial1\",\n                \"email\": \"Email1\",\n                \"direccion\": \"Dir1\",\n                \"servicios\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"11111111\"\n            },\n            \"tecnico\": {\n                \"id\": 2,\n                \"nombre\": \"T2\",\n                \"email\": \"Tecnico2\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 1,\n            \"nombre\": \"Luz\"\n        },\n        \"problema\": {\n            \"id\": 1,\n            \"nombre\": \"No hay conexión\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 24,\n        \"descripcion\": null,\n        \"incidente\": {\n            \"id\": 6,\n            \"fechaEstimada\": \"2023-11-24\",\n            \"fechaDesde\": \"2023-11-21T00:00:00\",\n            \"fechaHasta\": \"2023-11-21T10:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 1,\n                \"razonSocial\": \"RSocial1\",\n                \"email\": \"Email1\",\n                \"direccion\": \"Dir1\",\n                \"servicios\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Luz\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Wifi\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"11111111\"\n            },\n            \"tecnico\": {\n                \"id\": 2,\n                \"nombre\": \"T2\",\n                \"email\": \"Tecnico2\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        },\n        \"problema\": {\n            \"id\": 3,\n            \"nombre\": \"Cañeria\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 25,\n        \"descripcion\": null,\n        \"incidente\": {\n            \"id\": 7,\n            \"fechaEstimada\": \"2023-11-24\",\n            \"fechaDesde\": \"2023-11-22T00:00:00\",\n            \"fechaHasta\": \"2023-11-22T10:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": null,\n            \"cliente\": {\n                \"id\": 2,\n                \"razonSocial\": \"RSocial2\",\n                \"email\": \"Email2\",\n                \"direccion\": \"Dir2\",\n                \"servicios\": [\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"22222222\"\n            },\n            \"tecnico\": {\n                \"id\": 2,\n                \"nombre\": \"T2\",\n                \"email\": \"Tecnico2\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        },\n        \"problema\": {\n            \"id\": 3,\n            \"nombre\": \"Cañeria\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 26,\n        \"descripcion\": null,\n        \"incidente\": {\n            \"id\": 3,\n            \"fechaEstimada\": \"2023-11-24\",\n            \"fechaDesde\": \"2023-11-27T00:00:00\",\n            \"fechaHasta\": \"2023-11-27T01:00:00\",\n            \"resuelto\": true,\n            \"consideraciones\": \"Consideracion2\",\n            \"cliente\": {\n                \"id\": 2,\n                \"razonSocial\": \"RSocial2\",\n                \"email\": \"Email2\",\n                \"direccion\": \"Dir2\",\n                \"servicios\": [\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Gas\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Telefono\"\n                    }\n                ],\n                \"cuit\": \"22222222\"\n            },\n            \"tecnico\": {\n                \"id\": 1,\n                \"nombre\": \"José\",\n                \"email\": \"Jose@gmail.com\",\n                \"numTel\": \"12345678\",\n                \"especialidades\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Mecanico\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"nombre\": \"Computación\"\n                    },\n                    {\n                        \"id\": 4,\n                        \"nombre\": \"Automotor\"\n                    },\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Electricidad\"\n                    },\n                    {\n                        \"id\": 5,\n                        \"nombre\": \"Plomero\"\n                    },\n                    {\n                        \"id\": 7,\n                        \"nombre\": \"Albañil\"\n                    }\n                ]\n            }\n        },\n        \"servicio\": {\n            \"id\": 3,\n            \"nombre\": \"Wifi\"\n        },\n        \"problema\": {\n            \"id\": 3,\n            \"nombre\": \"Cañeria\",\n            \"horasEstimadas\": 10,\n            \"horasMaximas\": 15,\n            \"complejo\": true,\n            \"especialidades\": [\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                }\n            ]\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Obtener Detalle de Incidente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/incidentesDetalles/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"incidentesDetalles",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Obtener Detalle de Incidente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/incidentesDetalles/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"incidentesDetalles",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:29:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"descripcion\": \"Desc2\",\n    \"incidente\": {\n        \"id\": 1,\n        \"fechaEstimada\": \"2023-11-25\",\n        \"fechaDesde\": \"2023-11-24T00:00:00\",\n        \"fechaHasta\": \"2023-11-24T01:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": \"Considreacion1\",\n        \"cliente\": {\n            \"id\": 1,\n            \"razonSocial\": \"RSocial1\",\n            \"email\": \"Email1\",\n            \"direccion\": \"Dir1\",\n            \"servicios\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Luz\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Gas\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Wifi\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                }\n            ],\n            \"cuit\": \"11111111\"\n        },\n        \"tecnico\": {\n            \"id\": 1,\n            \"nombre\": \"José\",\n            \"email\": \"Jose@gmail.com\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Mecanico\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Albañil\"\n                }\n            ]\n        }\n    },\n    \"servicio\": {\n        \"id\": 2,\n        \"nombre\": \"Gas\"\n    },\n    \"problema\": {\n        \"id\": 2,\n        \"nombre\": \"Problema de conexión\",\n        \"horasEstimadas\": 3,\n        \"horasMaximas\": 8,\n        \"complejo\": false,\n        \"especialidades\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Detalle de Incidente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": null,\r\n    \"incidente\": {\r\n        \"id\": 3\r\n    },\r\n    \"servicio\": {\r\n        \"id\": 3\r\n    },\r\n    \"problema\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/soporte/guardarIncidenteDetalle",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"guardarIncidenteDetalle"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Detalle de Incidente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descripcion\": null,\r\n    \"incidente\": {\r\n        \"id\": 3\r\n    },\r\n    \"servicio\": {\r\n        \"id\": 3\r\n    },\r\n    \"problema\": {\r\n        \"id\": 1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/soporte/guardarIncidenteDetalle",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"guardarIncidenteDetalle"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:29:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 29,\n    \"descripcion\": null,\n    \"incidente\": {\n        \"id\": 3,\n        \"fechaEstimada\": \"2023-11-24\",\n        \"fechaDesde\": \"2023-11-27T00:00:00\",\n        \"fechaHasta\": \"2023-11-27T01:00:00\",\n        \"resuelto\": true,\n        \"consideraciones\": \"Consideracion2\",\n        \"cliente\": {\n            \"id\": 2,\n            \"razonSocial\": \"RSocial2\",\n            \"email\": \"Email2\",\n            \"direccion\": \"Dir2\",\n            \"servicios\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Gas\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Telefono\"\n                }\n            ],\n            \"cuit\": \"22222222\"\n        },\n        \"tecnico\": {\n            \"id\": 1,\n            \"nombre\": \"José\",\n            \"email\": \"Jose@gmail.com\",\n            \"numTel\": \"12345678\",\n            \"especialidades\": [\n                {\n                    \"id\": 1,\n                    \"nombre\": \"Mecanico\"\n                },\n                {\n                    \"id\": 3,\n                    \"nombre\": \"Computación\"\n                },\n                {\n                    \"id\": 4,\n                    \"nombre\": \"Automotor\"\n                },\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Electricidad\"\n                },\n                {\n                    \"id\": 5,\n                    \"nombre\": \"Plomero\"\n                },\n                {\n                    \"id\": 7,\n                    \"nombre\": \"Albañil\"\n                }\n            ]\n        }\n    },\n    \"servicio\": {\n        \"id\": 3,\n        \"nombre\": \"Wifi\"\n    },\n    \"problema\": {\n        \"id\": 1,\n        \"nombre\": \"No hay conexión\",\n        \"horasEstimadas\": 10,\n        \"horasMaximas\": 15,\n        \"complejo\": true,\n        \"especialidades\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Detalle de Incidente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/eliminarIncidenteDetalle/29",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"eliminarIncidenteDetalle",
+								"29"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Detalle de Incidente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/eliminarIncidenteDetalle/29",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"eliminarIncidenteDetalle",
+										"29"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:29:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Detalle de incidente eliminado correctamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "Reporte 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/reportes/dias/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"reportes",
+								"dias",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reporte 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/reportes/dias/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"reportes",
+										"dias",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:29:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"T4\",\n        \"email\": \"Tecnico4\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Reporte 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/reportes/especialidad/5/dias/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"reportes",
+								"especialidad",
+								"5",
+								"dias",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reporte 2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/reportes/especialidad/5/dias/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"reportes",
+										"especialidad",
+										"5",
+										"dias",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:29:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Reporte 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/reportes/mas-rapido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"reportes",
+								"mas-rapido"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reporte 3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/soporte/reportes/mas-rapido",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"soporte",
+										"reportes",
+										"mas-rapido"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 29 Nov 2023 03:29:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"T4\",\n        \"email\": \"Tecnico4\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

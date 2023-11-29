@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "81f2f637-55dd-470d-998d-f0b5734969b2",
+		"name": "Reportes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30775581"
+	},
+	"item": [
+		{
+			"name": "Reporte 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/soporte/reportes/dias/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"soporte",
+						"reportes",
+						"dias",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reporte 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/reportes/dias/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"reportes",
+								"dias",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Nov 2023 03:14:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"nombre\": \"T2\",\n        \"email\": \"Tecnico2\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Reporte 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/soporte/reportes/especialidad/2/dias/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"soporte",
+						"reportes",
+						"especialidad",
+						"2",
+						"dias",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reporte 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/reportes/especialidad/2/dias/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"reportes",
+								"especialidad",
+								"2",
+								"dias",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Nov 2023 03:14:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Reporte 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/soporte/reportes/mas-rapido",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"soporte",
+						"reportes",
+						"mas-rapido"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reporte 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/soporte/reportes/mas-rapido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"soporte",
+								"reportes",
+								"mas-rapido"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Nov 2023 03:14:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"José\",\n        \"email\": \"Jose@gmail.com\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 1,\n                \"nombre\": \"Mecanico\"\n            },\n            {\n                \"id\": 3,\n                \"nombre\": \"Computación\"\n            },\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            },\n            {\n                \"id\": 2,\n                \"nombre\": \"Electricidad\"\n            },\n            {\n                \"id\": 5,\n                \"nombre\": \"Plomero\"\n            },\n            {\n                \"id\": 7,\n                \"nombre\": \"Albañil\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"T4\",\n        \"email\": \"Tecnico4\",\n        \"numTel\": \"12345678\",\n        \"especialidades\": [\n            {\n                \"id\": 4,\n                \"nombre\": \"Automotor\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		}
+	]
+}
